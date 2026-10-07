@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ágil Portões — Manutenção de portão eletrônico em Dracena e região</title>
+<meta name="description" content="Troca de placa, troca de cabo de aço e manutenção de motor para portão eletrônico em Dracena, Junqueirópolis, Tupi Paulista e região.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFFFF;--soft:#F2F6F4;--ink:#07201F;--muted:#5F716F;--line:#DCE5E1;--blue:#0E4D4A;--on:#FFFFFF;--orange:#C8F03C;--navy:#07201F;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#061615;--soft:#0B2524;--ink:#EAF4F1;--muted:#9DB5B0;--line:#1C3836;--blue:#C8F03C;--on:#07201F}}
+:root[data-theme="dark"]{--bg:#061615;--soft:#0B2524;--ink:#EAF4F1;--muted:#9DB5B0;--line:#1C3836;--blue:#C8F03C;--on:#07201F}
+html{scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.03em;line-height:1.08}
+h1{font-size:clamp(2.4rem,7.5vw,4.6rem)}
+h2{font-size:clamp(1.8rem,4.6vw,2.7rem)}
+h3{font-size:1.25rem;letter-spacing:-.02em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+.muted{color:var(--muted)}
+.mk{width:36px;height:36px;display:block}
+
+/* topo */
+header.bar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em;text-decoration:none;font-size:1.1rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;font:600 .98rem/1 "Manrope",sans-serif;text-decoration:none;padding:15px 24px;border-radius:12px;border:1px solid transparent;cursor:pointer}
+.btn.p{background:var(--blue);color:var(--on)}
+.btn.p:hover{filter:brightness(1.08)}
+.btn.s{border-color:var(--line);color:var(--ink)}
+.btn.s:hover{border-color:var(--ink)}
+.btn.sm{padding:11px 18px;font-size:.92rem}
+
+/* hero */
+.hero{padding:72px 0 88px}
+.hero .grid{display:grid;gap:48px}
+.hero p.lead{font-size:1.2rem;color:var(--muted);max-width:46ch;margin-top:22px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.facts{background:var(--soft);border-radius:20px;padding:28px;display:grid;gap:20px;align-content:start}
+.facts div b{display:block;font-size:.85rem;color:var(--muted);font-weight:500}
+.facts div span{font-weight:600;font-size:1.05rem}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#22C55E;margin-right:8px}
+@media (min-width:900px){.hero .grid{grid-template-columns:1.5fr 1fr;align-items:end}}
+
+/* serviços */
+.head{max-width:34ch;margin-bottom:48px}
+.svc{display:grid;border-top:1px solid var(--line)}
+.sv{padding:32px 0;border-bottom:1px solid var(--line);display:grid;gap:12px}
+.sv svg{width:40px;height:40px;stroke:var(--blue);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sv p{color:var(--muted);max-width:44ch}
+.sv a{font-weight:600;color:var(--blue);text-decoration:none;width:max-content}
+.sv a:hover{text-decoration:underline}
+@media (min-width:860px){.svc{grid-template-columns:repeat(3,1fr);border-top:0}.sv{padding:8px 32px 8px 0;border-bottom:0;border-top:1px solid var(--line);padding-top:28px}.sv+.sv{padding-left:32px;border-left:1px solid var(--line)}}
+
+/* sinais */
+.soft{background:var(--soft)}
+.two{display:grid;gap:40px}
+@media (min-width:860px){.two{grid-template-columns:1fr 1.2fr;gap:72px}}
+details{border-bottom:1px solid var(--line);padding:20px 0}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;font-size:1.08rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--blue);font-size:1.5rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin-top:8px;color:var(--muted);max-width:56ch}
+
+/* região e passos */
+.towns{display:flex;flex-wrap:wrap;gap:8px 10px;margin-top:24px}
+.towns span{border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-weight:500}
+.steps{list-style:none;counter-reset:s;margin:40px 0 0;padding:0;display:grid;gap:28px}
+.steps li{counter-increment:s;display:grid;gap:10px;justify-items:start}
+.steps li::before{content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--blue);color:var(--on);display:grid;place-items:center;font-weight:800}
+.steps b{display:block;font-size:1.05rem}
+.steps span{color:var(--muted);font-size:.97rem}
+@media (min-width:860px){.steps{grid-template-columns:repeat(4,1fr);gap:32px}}
+
+/* contato (fundo fixo escuro) */
+.contact{background:var(--navy);outline:1px solid #1C3836;color:#F1F3FF;border-radius:28px;padding:48px 28px;display:grid;gap:36px}
+.contact h2{color:#FFFFFF}
+.contact p.l{color:#C5D8D4;margin-top:14px;max-width:38ch}
+.opts{display:grid;gap:10px}
+.opt{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;color:#FFFFFF;border:1px solid #2F5A56;border-radius:14px;padding:17px 20px;font-weight:600}
+.opt::after{content:"›";font-size:1.4rem;color:#C8F03C;line-height:1}
+.opt:hover{background:#0E3B38;border-color:#6C9A94}
+.contact .note{color:#9DB5B0;font-size:.92rem;margin-top:6px}
+.call{background:#FFFFFF;color:#07201F;margin-top:24px}
+@media (min-width:860px){.contact{grid-template-columns:1fr 1fr;padding:64px;align-items:start}}
+footer{padding:36px 0 96px;border-top:1px solid var(--line);margin-top:88px;color:var(--muted);font-size:.93rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9;background:#C8F03C;color:#07201F;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#"><svg class="mk" viewBox="0 0 1000 1000" aria-hidden="true"><rect width="1000" height="1000" rx="240" fill="#0E4D4A"/><g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M290 770L500 250L710 770" stroke="#fff" stroke-width="120"/><path d="M372 615H800" stroke="#C8F03C" stroke-width="64"/><path d="M775 560L835 615L775 670" stroke="#C8F03C" stroke-width="40"/></g></svg>Ágil Portões</a>
+    <a class="btn p sm" href="#contato">Entre em contato</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <h1>Manutenção de portão eletrônico em Dracena e região.</h1>
+      <p class="lead">Troca de placa, troca de cabo de aço e manutenção de motor. Vamos até a sua casa, condomínio ou empresa.</p>
+      <div class="cta">
+        <a class="btn p" href="https://wa.me/5518900000000?text=Ol%C3%A1%21%20Preciso%20de%20manuten%C3%A7%C3%A3o%20no%20meu%20port%C3%A3o%20eletr%C3%B4nico." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <a class="btn s" href="tel:+5518900000000">Ligar agora</a>
+      </div>
+    </div>
+    <aside class="facts" aria-label="Informações">
+      <div><b>Atendimento</b><span><i class="dot"></i>24 horas, todos os dias</span></div>
+      <div><b>Onde</b><span>Dracena, Junqueirópolis, Tupi Paulista e região</span></div>
+      <div><b>Orçamento</b><span>Sem compromisso, antes de trocar qualquer peça</span></div>
+    </aside>
+  </div>
+</section>
+
+<section id="servicos" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><h2>Três serviços, feitos direito.</h2></div>
+    <div class="svc">
+      <article class="sv">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="10" width="32" height="28" rx="4"/><rect x="18" y="20" width="10" height="9"/><path d="M8 18H2M8 30H2M40 18h6M40 30h6"/></svg>
+        <h3>Troca de placa</h3>
+        <p>Placa queimada por raio, oscilação de energia ou umidade. Trocamos, regulamos curso e força e cadastramos seus controles.</p>
+        <a href="https://wa.me/5518900000000?text=Ol%C3%A1%21%20Preciso%20de%20um%20or%C3%A7amento%20para%20trocar%20a%20placa%20do%20meu%20port%C3%A3o." target="_blank" rel="noopener">Entre em contato</a>
+      </article>
+      <article class="sv">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 36C14 8 22 8 24 24s10 16 20-12"/></svg>
+        <h3>Troca de cabo de aço</h3>
+        <p>Cabo desfiado, enferrujado ou frouxo pode romper. Trocamos o cabo e conferimos polias, roldanas e molas.</p>
+        <a href="https://wa.me/5518900000000?text=Ol%C3%A1%21%20Preciso%20de%20um%20or%C3%A7amento%20para%20trocar%20o%20cabo%20de%20a%C3%A7o%20do%20meu%20port%C3%A3o." target="_blank" rel="noopener">Entre em contato</a>
+      </article>
+      <article class="sv">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="7"/><circle cx="24" cy="24" r="15" stroke-dasharray="7 6.1"/></svg>
+        <h3>Manutenção de motor</h3>
+        <p>Limpeza, lubrificação e troca de engrenagens, capacitor, fim de curso e rolamentos. Se não compensar consertar, avisamos antes.</p>
+        <a href="https://wa.me/5518900000000?text=Ol%C3%A1%21%20O%20motor%20do%20meu%20port%C3%A3o%20precisa%20de%20manuten%C3%A7%C3%A3o.%20Preciso%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Entre em contato</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap two">
+    <div>
+      <h2>Seu portão está pedindo ajuda?</h2>
+      <p class="muted" style="margin-top:16px;max-width:36ch">Estes são os sinais mais comuns de que está na hora de chamar um técnico.</p>
+    </div>
+    <div>
+      <details><summary>Não responde ao controle</summary><p>Luz da placa apagada ou motor mudo costuma indicar placa queimada.</p></details>
+      <details><summary>Abre ou fecha sozinho, ou trava no meio</summary><p>Defeito na placa, no fim de curso ou interferência no sinal.</p></details>
+      <details><summary>Cabo de aço desfiado, solto ou enferrujado</summary><p>Pare de usar e chame um técnico: o cabo pode romper.</p></details>
+      <details><summary>Portão torto, pesado ou raspando</summary><p>Cabo, polia ou mola fora de ajuste.</p></details>
+      <details><summary>Motor esquenta, zumbe ou faz barulho</summary><p>Desgaste de capacitor, engrenagem ou rolamento.</p></details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Como funciona.</h2>
+    <ol class="steps">
+      <li><b>Você conta o problema</b><span>Pelo WhatsApp, com foto ou vídeo se puder.</span></li>
+      <li><b>Combinamos a visita</b><span>Dia e horário bons para você.</span></li>
+      <li><b>Diagnóstico no local</b><span>Você aprova o orçamento antes de qualquer troca.</span></li>
+      <li><b>Serviço testado</b><span>Testamos abertura, fechamento e sensores com você presente.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Onde atendemos.</h2>
+    <div class="towns"><span>Dracena</span><span>Junqueirópolis</span><span>Tupi Paulista</span><span>Ouro Verde</span><span>Monte Castelo</span><span>Nova Guataporanga</span><span>Santa Mercedes</span><span>Panorama</span><span>Paulicéia</span></div>
+    <p class="muted" style="margin-top:16px">Sua cidade não está na lista? Chame no WhatsApp e confirmamos.</p>
+  </div>
+</section>
+
+<section id="contato" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2>Entre em contato.</h2>
+        <p class="l">Toque no que está acontecendo e o WhatsApp abre com a mensagem pronta.</p>
+        <a class="btn call" href="tel:+5518900000000">Ligar agora</a>
+      </div>
+      <div class="opts">
+        <a class="opt" href="https://wa.me/5518900000000?text=Ol%C3%A1%21%20Meu%20port%C3%A3o%20n%C3%A3o%20abre%20ou%20n%C3%A3o%20responde%20ao%20controle.%20Preciso%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Portão não abre ou não responde</a>
+        <a class="opt" href="https://wa.me/5518900000000?text=Ol%C3%A1%21%20Preciso%20de%20um%20or%C3%A7amento%20para%20trocar%20a%20placa%20do%20meu%20port%C3%A3o." target="_blank" rel="noopener">Trocar a placa</a>
+        <a class="opt" href="https://wa.me/5518900000000?text=Ol%C3%A1%21%20Preciso%20de%20um%20or%C3%A7amento%20para%20trocar%20o%20cabo%20de%20a%C3%A7o%20do%20meu%20port%C3%A3o." target="_blank" rel="noopener">Trocar o cabo de aço</a>
+        <a class="opt" href="https://wa.me/5518900000000?text=Ol%C3%A1%21%20O%20motor%20do%20meu%20port%C3%A3o%20est%C3%A1%20com%20barulho%20ou%20esquentando.%20Preciso%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Motor com barulho ou esquentando</a>
+        <a class="opt" href="https://wa.me/5518900000000?text=Ol%C3%A1%21%20Preciso%20de%20manuten%C3%A7%C3%A3o%20no%20meu%20port%C3%A3o%20eletr%C3%B4nico." target="_blank" rel="noopener">Outro problema</a>
+        <p class="note">Mande uma foto da placa ou do motor no WhatsApp e já passamos uma ideia do valor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="ano"></span> Ágil Portões</span>
+    <span>Dracena - SP e região</span>
+  </div>
+</footer>
+
+<a class="btn fab" href="https://wa.me/5518900000000?text=Ol%C3%A1%21%20Preciso%20de%20manuten%C3%A7%C3%A3o%20no%20meu%20port%C3%A3o%20eletr%C3%B4nico." target="_blank" rel="noopener">WhatsApp</a>
+<script>document.getElementById("ano").textContent=new Date().getFullYear();</script>
+</body>
+</html>
